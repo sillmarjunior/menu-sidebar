@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#sidebar,
+#content {
+    height: 100vh;
+    overflow: hidden;
+    float: left;
+    transition: width .35s;
+}
+
+#sidebar {
+    background-color: #141414;
+    width: 300px;
+}
+
+#sidebar nav ul li {
+    padding: 20px;
+    background-color: #111;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+#sidebar nav ul li a {
+    color: #fff;
+}
+
+#sidebar.fechar {
+    width: 0;
+}
+
+#sidebar.fechar+#content {
+    width: 100%;
+}
+
+#content {
+    background-color: #ededed;
+    width: calc(100% - 300px);
+}
+
+#btn {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    padding: 5px;
+}
