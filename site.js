@@ -1,4 +1,4 @@
-
+function closebar() {
 
     const sidebar = document.getElementById('sidebar');
     const button = document.getElementById('btn');
@@ -7,3 +7,4 @@
         sidebar.classList.toggle('fechar');
     });
 
+}
